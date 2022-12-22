@@ -17,6 +17,10 @@ The purpose of image translation is to map the input from the source domain to t
 Our project has a wide range of application scenarios. For example, we can classified the weather automatically and process bad weather pictures obtained by driving recorders to allow drivers to make better judgments. In view of the fact that the driving recorder is often installed behind the front windshield, using the wiper can ensure that the clarity of the picture will not be affected by the raindrops on the glass. Also, reversing cameras often get very blurry images due to bad weather. It can also help drivers get a better view based on similar ideas
 
 # Classification Analysis
+
+# For one try of testing, we used yoturb video depend on each weather condition. Because we are using our model to real-world, we need to see how our model perform on the real-world weather classification at driving.
+The shared link on drive about five yoturb video is below : https://drive.google.com/drive/folders/10E1oLFdjpivQNiQnFSVpzDtjwNuo5Yu9?usp=sharing
+
 Our testing result on real-driving video shows that resnet101 is the best model among our three models. However, the accuracy is still worth of improving. There are several points that our model need to improve.
 Because we are supposed to train a model on recoginizing weather condition while driving, we could add some data from driving car carmera. Our training model do not include many pictures on that. The reason why we do not include any images into the training could be stated in two main points. First, the car camera video is hard to find, either searching on yoturb or recording by ourselves is time-consuming and difficult. Secondly, we want to see the performance of just trainig model with regular weather images. As shown until, the best performance on test data set is around 85 % . We can say this result is relatively good because of our limit on training data. If we add some picture while driving into the training part, we could possibly get a higher test accuracy on real-world.
 
