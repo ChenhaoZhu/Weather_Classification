@@ -1,5 +1,10 @@
 # Weather_Classification
 
+# Our data is found on kaggle, and here is the kaggle dataset link : https://www.kaggle.com/datasets/vijaygiitk/multiclass-weather-dataset
+# Also, we upload the kaggle dataset into our drive and here is the shared drive link : https://drive.google.com/drive/folders/1vBxCKRGNq8gs9xU6i3F4AjWyZzAuMQmn?usp=sharing
+
+
+
 Our group intends to classify weather images first, and then convert severe weather images into clear images that are easier to identify. Our project has a wide range of application scenarios like autonomous driving. Specifically, Severe weather phenomena have various negative effects on transportation. As a source of information for vehicle sensors, the state of the environment is directly influenced by weather conditions. For camera-led multi-sensor fusion system which is one of the mainstream, it is particularly important to recognize the weather through images and obtain surrounding information based on clear pictures.
 
 For the classification part, we tried three different networks and chose the one that performed the best which is resnet101. Firstly, we dowanload data from kaggle and divide labeled data into 5 classes which is Sunrise, Shine, Rainy, Foggy, Cloudy. This is what the raw data looks like. We split the data into training set and validation set in a ratio of 2:1 and Resize image into 255:255. For training and validation set, the input is pictures and the output is the probability that the image belongs to each class.
